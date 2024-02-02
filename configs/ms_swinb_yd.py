@@ -36,7 +36,7 @@ class EngineConfig(DefaultEngineConfig):
 
         elif self.STAGE_NAME == 'PRE_YTB_DAV':
 
-            self.DATASETS = ['youtubevos','davis2017']
+            self.DATASETS = ['davis2017']
             self.init_dir(data='./datasets',root='./results',eval='./')
             
             pretrain_exp = self.EXP_NAME
