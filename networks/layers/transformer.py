@@ -4,7 +4,7 @@ import torch
 import torch.nn.functional as F
 from torch import nn
 
-from networks.layers.attention import MultiheadAttention, MultiheadLocalAttentionV2, MultiheadLocalAttentionV3,silu, GAU, LocalGAU, GatedPropagation, LocalGatedPropagation
+from networks.layers.attention import MultiheadAttention, MultiheadLocalAttentionV2, MultiheadLocalAttentionV3,silu, GatedPropagation, LocalGatedPropagation
 from networks.layers.basic import ConvGN,ResGN,DropPath, GroupNorm1D, GNActDWConv2d, seq_to_2d, ScaleOffset, mask_out
 
 def _get_norm(indim, type='ln', groups=8):
