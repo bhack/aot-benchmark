@@ -52,7 +52,7 @@ class MultiheadAttention(nn.Module):
         self.drop_prob = dropout
         self.projection = nn.Linear(d_model, d_model)
         self._init_weight()
-
+    @torch.compile
     def forward(self, Q, K, V):
         """
         :param Q: A 3d tensor with shape of [T_q, bs, C_q]
