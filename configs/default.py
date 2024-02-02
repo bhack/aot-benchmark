@@ -46,7 +46,7 @@ class DefaultEngineConfig():
         self.DATA_YTB_BALANCE_RATIO = 0.0
         self.DATA_YTB_USE_VOSP = False
 
-        self.PRETRAIN = True
+        self.PRETRAIN = False
         self.PRETRAIN_FULL = False  # if False, load encoder only
         self.PRETRAIN_MODEL = ''
         self.PRETRAIN_ID_MODEL = ''
